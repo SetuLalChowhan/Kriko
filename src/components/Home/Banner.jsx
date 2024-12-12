@@ -1,8 +1,10 @@
 import React from "react";
-import bannerImage from "../assets/images/banner1.png";
-import BannerAvatar from "../assets/images/bannerAvatar.png";
+import bannerImage from "../../assets/images/banner1.png";
+import BannerAvatar from "../../assets/images/bannerAvatar.png";
+import CommonHeader from "../common/CommonHeader";
+import CommonPera from "../common/CommonPera";
 
-const Home = () => {
+const Banner = () => {
   return (
     <div
       style={{
@@ -10,25 +12,28 @@ const Home = () => {
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
-      className="w-full h-screen z-20"
+      className="w-full h-screen z-20 "
     >
       <div className=" xlg:max-w-[1400px] sm:px-16 px-4 2xl:px-6  mx-auto flex lg:justify-between lg:flex-row flex-col-reverse justify-center items-center gap-10">
         {/* left side */}
 
         <div className=" lg:w-2/3 w-full  flex flex-col gap-4 lg:pt-44 items-start ">
-          <h1 className=" xl:text-[72px] lg:text-[40px] text-[24px] font-fredoka font-[600]">
-            Where Happy Dogs Find Their Second Home
-          </h1>
-          <p className="text-[24px] font-poppins font-[400] text-[#6B6B6B] ">
-            Trusted dog daycare and boarding services designed to keep your pets
-            safe, happy, and loved.
-          </p>
-          <button className=" px-6 py-4 bg-foundation-blue-500 rounded-[40px] font-fredoka text-white text-[24px]">
-            Book a Service
-          </button>
+        <CommonHeader title={"Where Happy Dogs Find Their Second Home"} />
+        <CommonPera pera ={"Trusted dog daycare and boarding services designed to keep your pets safe, happy, and loved."} />
+       
+          
+          <div className='flex gap-4 bg-foundation-blue-500 text-white font-fredoka xl:py-[16px] xl:px-[24px] py-[10px] px-[16px] rounded-[40px] '>
+                <button className='xl:text-[24px] text-[16px] font-[600] '>Book a Service</button>
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+  <path opacity="0.4" d="M19.9987 36.6666C29.2034 36.6666 36.6654 29.2047 36.6654 19.9999C36.6654 10.7952 29.2034 3.33325 19.9987 3.33325C10.794 3.33325 3.33203 10.7952 3.33203 19.9999C3.33203 29.2047 10.794 36.6666 19.9987 36.6666Z" fill="white"/>
+  <path d="M26.718 19.1166L21.718 14.1167C21.2346 13.6333 20.4346 13.6333 19.9513 14.1167C19.468 14.6 19.468 15.4 19.9513 15.8833L22.818 18.75H14.168C13.4846 18.75 12.918 19.3166 12.918 20C12.918 20.6833 13.4846 21.25 14.168 21.25H22.818L19.9513 24.1166C19.468 24.6 19.468 25.4 19.9513 25.8833C20.2013 26.1333 20.518 26.25 20.8346 26.25C21.1513 26.25 21.468 26.1333 21.718 25.8833L26.718 20.8833C27.2013 20.4 27.2013 19.6 26.718 19.1166Z" fill="white"/>
+</svg>
+                </div>
         </div>
 
-        <div className="relative  border-2 border-red-500 ">
+        {/* RIght Side */}
+
+        <div className="relative w-[250px] md:w-[300px]  lg:w-[500px] lg:mt-0 mt-20  ">
           <img
             src={BannerAvatar}
             alt="Banner Images"
@@ -84,4 +89,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Banner;
