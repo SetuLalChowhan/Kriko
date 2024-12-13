@@ -14,6 +14,9 @@ export default {
         poppins: ["Poppins", "sans-serif"], // Add Poppins as a custom font family
         fredoka: ["Fredoka", "sans-serif"],
       },
+      boxShadow: {
+        'custom-shadow': '0px 6px 16px 0px rgba(0, 0, 0, 0.12)',
+      },
       container: {
         center: true,
         screens: {

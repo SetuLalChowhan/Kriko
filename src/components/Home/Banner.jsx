@@ -12,7 +12,7 @@ const Banner = () => {
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
-      className="w-full h-screen z-20 "
+      className="w-full h-screen z-20  "
     >
       <div className=" xlg:max-w-[1400px] sm:px-16 px-4 2xl:px-6  mx-auto flex lg:justify-between lg:flex-row flex-col-reverse justify-center items-center gap-10">
         {/* left side */}

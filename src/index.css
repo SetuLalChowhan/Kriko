@@ -1,3 +1,22 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.custom-before::before {
+    position: absolute;
+    z-index: -1;
+    width: 140%;
+    height: 140%;
+    content: "";
+    display: inline-block;
+    background: #edf1fa;
+    margin: -60px;
+    border-radius: 999px;
+
+  }
+
+  .margin-top{
+    margin-top: 6%;
+  }
+
+

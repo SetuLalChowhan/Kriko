@@ -1,6 +1,7 @@
 import React from 'react'
 import CommonHeader from '../common/CommonHeader'
 import CommonPera from '../common/CommonPera'
+import CardSlider from './CardSlider'
 
 const Slider = () => {
   return (
@@ -13,6 +14,8 @@ const Slider = () => {
                 <CommonPera pera={"Trusted dog daycare and boarding services designed to keep your pets safe, happy, and loved."} />
 
             </div>
+
+            <CardSlider/>
         </div>
 
     </div>

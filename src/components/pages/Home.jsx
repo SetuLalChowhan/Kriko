@@ -10,7 +10,7 @@ export const Home = () => {
 
         <Banner/>
         <ServiceSection/>
-        {/* <ServiceWork/> */}
+        <ServiceWork/>
 
         <Slider/>
     </div>

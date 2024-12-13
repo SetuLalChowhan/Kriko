@@ -6,6 +6,7 @@ import dog1 from '../../assets/images/Dog-1.png'
 import dog2 from '../../assets/images/Dog-2.png'
 import dog3 from '../../assets/images/Dog-3.png'
 import dog4 from '../../assets/images/Dog-4.png'
+import DogCard from '../common/DogCard'
 
 
 const dogDetails = [
@@ -37,33 +38,28 @@ const dogDetails = [
 
 export const ServiceWork = () => {
   return (
-    <div
-      style={{
-        backgroundImage: `url(${bannerImage})`,
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-      }}
-      className="w-full h-screen mt-44 "
-    >
+    <div className=' mt-36 mb-40 relative'>
 
-      <div className='space-y-20 '>
-        <div className='flex flex-col justify-center items-center container relative top-56'>
-          <CommonHeader title={"How Our Service Works"} />
-          <CommonPera pera={"Trusted dog daycare and boarding services designed to keep your pets safe, happy, and loved."} />
-        </div>
+      <div className='  flex flex-col justify-center items-center'>
+        <CommonHeader title={"How Our Service Works"} />
+        <CommonPera pera={"Trusted dog daycare and boarding services designed to keep your pets safe, happy, and loved."} />
+      </div>
 
-        <div className='flex  gap-0   relative top-72 2xl:max-w-[1400px] xl:max-w lg:max-w-[800px] border-2 border-red-500  mx-auto  '>
-          {/* {
-            dogDetails.map((card,index)=>(
-              <DogCard key={index} value = {card} position ={index+1}/>
+      <div className='flex justify-between 2xl:max-w-[1200px] xl:max-w-[900px] lg:max-w-[600px] md:max-w-[500px] max-w-[300px] sm:max-w-[450px]   mx-auto mt-[10%]'>
 
-            ))
-          } */}
+        {
+          dogDetails.map((item, index) => (
+            <DogCard key={index} value={item} pos={index + 1}>
 
-        </div>
+            </DogCard>
+          ))
+        }
 
       </div>
 
+      <img src={bannerImage} alt='banner-image' className=' absolute w-full h-full block object-fill top-[-20%] -z-10 ' />
+
     </div>
   )
+
 }

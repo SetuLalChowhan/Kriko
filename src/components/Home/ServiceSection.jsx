@@ -23,7 +23,7 @@ const serviceData =[
 
 export const ServiceSection = () => {
     return (
-      <div className=' mt-12 mb-12 '>
+      <div className=' mt-12 mb-80  '>
   
           <div className=' container space-y-20'>
   
