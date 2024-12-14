@@ -40,7 +40,7 @@ export const ServiceWork = () => {
   return (
     <div className=' mt-36 mb-40 relative'>
 
-      <div className='  flex flex-col justify-center items-center'>
+      <div className='  flex flex-col justify-center items-center text-center'>
         <CommonHeader title={"How Our Service Works"} />
         <CommonPera pera={"Trusted dog daycare and boarding services designed to keep your pets safe, happy, and loved."} />
       </div>

@@ -16,7 +16,7 @@ import { IoMdClose } from "react-icons/io";
   };
 
   return (
-    <div className="fixed top-0 z-10 w-full">
+    <div className="absolute top-0 z-10 w-full bg-transparent">
       {/* Desktop Version */}
       <div className="max-w-[1320px] mx-auto px-4 flex justify-between items-center">
         <div className="m-0 p-0">

@@ -100,7 +100,7 @@ const CardSlider = () => {
                     },
                 }}
                 navigation={false}
-               
+
                 className=""
             >
                 {
@@ -114,7 +114,7 @@ const CardSlider = () => {
                     ))
                 }
 
-                <SwiperNavButton/>
+                <SwiperNavButton />
 
             </Swiper>
         </div>

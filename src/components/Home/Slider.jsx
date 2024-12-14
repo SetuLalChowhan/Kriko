@@ -9,7 +9,7 @@ const Slider = () => {
 
         <div>
             {/* font section */}
-            <div className='container flex justify-center flex-col gap-6 items-center'>
+            <div className='container flex justify-center flex-col gap-6 items-center text-center'>
                 <CommonHeader title={"What Our Happy Customers Say"} />
                 <CommonPera pera={"Trusted dog daycare and boarding services designed to keep your pets safe, happy, and loved."} />
 
